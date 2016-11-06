@@ -2,10 +2,254 @@
 <html>
 <head>
 	<title>William Ross Design</title>
+
+	<!-- Grid CSS -->
+	<link rel="stylesheet" type="text/css" href="css/float-grid.css">
+
+	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/wrd.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fanwood+Text" rel="stylesheet">
+
 </head>
 <body>
-	<h1>Test</h1>
+	<!-- Background Main Image -->
+	<main>
+			<!-- <img class="img-main" src="img/12.jpg"> -->
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+			<!-- Indicators -->
+			<ol class="carousel-indicators hidden-xs">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			
+			<!-- Wrapper for slides -->
+			<div class="img-scale">
+				
+				<div class="carousel-inner img-main">
+					<div class="item active">
+						<img class="img-full" src="img/1.jpg" alt="">
+					</div>
+					<div class="item">
+						<img class="img-responsive img-full" src="img/2.JPG" alt="">
+					</div>
+					<div class="item">
+						<img class="img-responsive img-full" src="img/3.JPG" alt="">
+					</div>
+						<div class="item">
+						<img class="img-responsive img-full" src="img/4.JPG" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="icon-next"></span>
+			</a>
+		</div>
+	</main>
+
+	<!-- Navigation -->
+	<header>
+		<nav id="nav1wrap">
+			<div>
+		        <div class="brand">                    
+		            <a class="logo" href="index.html"><img  src="img/WRD_logo_name-short.jpg"/></a>
+		        </div> 
+				<div id="nav-main">
+		            <ul>
+		                <li>
+		                    <a class="page-scroll" href="#our-work">Our Work</a>
+		                </li>
+		                <li>
+		                    <a class="page-scroll" href="#our-company">Our Company</a>
+		                </li>
+		                <li>
+		                    <a href="contact.html">Contact Us</a>
+		                </li>
+		            </ul>
+				</div>
+		        <!-- toggle button -->
+		        <div id ="nav-trigger">
+		            <button type="button" class="navbar-toggle">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		        </div>
+			</div>
+		    <nav id="nav-mobile"></nav>
+		</nav>
+	</header>
+
+	<!-- Our Work -->
+	<section>
+        <div class="row" id="our-work">
+        <hr><h2 class="text-center">Our Work</h2><hr>
+            <div class="col-4">
+                <a href="house-template.html" class="portfolio-box"> 
+                <img class="img-work" src="img/complete/1_Arts-Crafts_Thumbnail.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                        Arts and Crafts Cottage
+                    </div>
+                </div>
+                </a>
+            </div>
+             <div class="col-4">
+                <a href="house-template.html" class="portfolio-box"> 
+                <img class="img-work" src="img/complete/2_Kennebunk-Beach-House_Thumbnail.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                        Kennebunk Beach House
+                    </div>
+                </div>
+                </a>
+            </div>
+             <div class="col-4">
+                <a href="house-template.html" class="portfolio-box"> 
+                <img class="img-work" src="img/complete/3_Kennebunk-Cabana_Thumbnail.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                        Kennebunk Beach Cabana
+                    </div>
+                </div>
+                </a>
+            </div>
+             <div class="col-4">
+                <a href="house-template.html" class="portfolio-box"> 
+                <img class="img-work" src="img/complete/4_Maine-Craftsman-Style_Thumbnail.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                        Maine Craftsman Style
+                    </div>
+                </div>
+                </a>
+            </div> 
+            <div class="col-4">
+                <a href="house-template.html" class="portfolio-box"> 
+                <img class="img-work" src="img/complete/5_Ogunquit-Oceanfront_Thumbnail.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                        Ogunquit Oceanfront
+                    </div>
+                </div>
+                </a>
+            </div> 
+            <div class="col-4">
+                <a href="house-template.html" class="portfolio-box"> 
+                <img class="img-work" src="img/complete/6_Ogunquit-Ocean-View_Thumbnail.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                        Ogunquit Oceanview
+                    </div>
+                </div>
+                </a>
+            </div>                        
+            <div class="col-4">
+                <img class="img-work" src="img/complete/2_Kennebunk-Beach-House_Thumbnail.jpg">
+            </div>
+            <div class="col-4">
+                <img class="img-work" src="img/complete/2_Kennebunk-Beach-House_Thumbnail.jpg">
+            </div>
+            <div class="col-4">
+                <img class="img-work" src="img/complete/3_Kennebunk-Cabana_Thumbnail.jpg">
+            </div>
+            <div class="col-4">
+                <img class="img-work" src="img/complete/4_Maine-Craftsman-Style_Thumbnail.jpg">
+            </div>
+            <div class="col-4">
+                <img class="img-work" src="img/complete/5_Ogunquit-Oceanfront_Thumbnail.jpg">
+            </div>
+            <div class="col-4">
+                <img class="img-work" src="img/complete/6_Ogunquit-Ocean-View_Thumbnail.jpg">
+            </div>
+        </div>
+    </section>
+
+	<!-- Our Company -->
+	<div class="container" id="our-company">
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h2 class="text-center">
+                    Our Approach
+                </h2>
+                <hr>
+            </div>
+                <div class="col-6">
+                    <img class="img-full" src="img/4.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <p>At the turn of the century, the 'Shingle Style' architecture of coastal New England, exhibited a rich tradition of syle and design. Those surviving seaside homes and buildings are admired today for their enduring qualities of proportion, and architectural detail. In our pursuit of creating fine home, these traditional design elements, and materials of the past, are what we value today.   </p>
+                </div>
+
+				<div class="col-12">
+                    <hr>
+                    <h2 class="text-center">
+                        Our Services
+                    </h2>
+                    <hr>
+                </div>
+				<div class="col-6">
+                    <img  src="img/Wing_Model.jpg" alt="">
+					<h4 class="text-center"> - Computer Generated Image - </h4>
+                </div>
+                <div class="col-6">
+				    <img src="img/Wing_Complete.jpg" alt="">
+					<h4 class="text-center"> - Completed Project - </h4>
+                </div>
+                <div class="clearfix"></div>
+				<div class="col-12">
+					<h3>Design Development</h3>
+					<p>During this stage, an emphasis is placed on conveying the architectural image so that the client can visually experience the design process. This is initiated with hand drawn and colored, architectural renderings, a time honored and proven technique, utilized by architects of the past. These graphic images are then transformed into a modern computer generated format where they are made into a three dimensional model. The client can not only see the image of his project, but is allowed to walk around the exterior and interior of the home to experience the design effect.</p>
+				</div>
+				<div class="col-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        Press
+                    </h2>
+                    <hr>
+                </div>
+				<div class="col-6">
+					<a href="http://coastalhg.com/Featured-Homes/soho-by-the-sea.html">
+                    <img class="img-responsive center-block img-press" src="img/logo.gif" alt="">
+					</a>
+                </div>
+				<div class="col-6">
+					<a href="http://mainehomedesign.com/features/2420-peace-like-a-river/">
+                    <img class="img-responsive center-block img-press" src="img/maine.png" alt="">
+					</a>
+                </div>
+        </div>
+	</div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="js/design.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script> 
+
+
 
 </body>
 </html>
