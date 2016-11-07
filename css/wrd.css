@@ -27,6 +27,22 @@ ul {
 	font-weight: 300; 
 } 
 
+.brand {
+	display: inline-block;
+	float: left;
+	margin-top: 5px;
+/*	margin-left: -10px;*/
+
+}
+
+.logo img {
+	display: inline-block;
+	height: 25px;
+	margin: 0;
+	padding: 0px;
+}
+
+
 	/*Navigation CSS*/
 	nav li {
 		display: inline;
@@ -57,16 +73,10 @@ ul {
 	}
 
 
-.brand {
-	display: inline-block;
-	float: left;
-	margin-top: 5px;
-	margin-left: -10px;
-}
+
 
 	#nav-trigger {
 		display: none;
-		margin-right: 5px;
 	}
 
 	#nav-mobile {
@@ -206,9 +216,9 @@ nav#nav1wrap {
 
 
 .img-main img{
-/*	width: 100%;
+/*	width: 100%; */
 	padding: 0;
-	margin: 0;*/
+	margin: 0;
 	position: relative;
     top: 0;
     bottom: 0;
@@ -216,14 +226,29 @@ nav#nav1wrap {
     right: 0;
     max-width: 100%;
     max-height: 100%;
-    margin: auto;
-    /*overflow: auto;*/
+    /*margin: auto;*/
+    overflow: auto;
 }
 
 
 .img-full{
 	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
+
+	/*sets the max width of the container of img-work */
+	.col-4 .img-work{
+		max-width: 300px;
+		padding: 10px;
+	}
+
+	.img-work {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		padding: 10px;
+	}
 
 /*scales all images to be same size
 .img-scale { 
