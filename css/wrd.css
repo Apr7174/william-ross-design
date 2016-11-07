@@ -1,12 +1,9 @@
 body {
-	font-family: 'Georgia', serif;
-	/*font-family: 'Fanwood Text';*/
 	color: white;
-	/*background-color: gray;*/
 	background: #2d2e27;
 	margin: 0;
 	padding: 0;
-	font-size: 1.1em;
+	font-family: 'Americana BT Roman', sans-serif;
 
 }
 
@@ -30,18 +27,14 @@ ul {
 .brand {
 	display: inline-block;
 	float: left;
-	margin-top: 5px;
-/*	margin-left: -10px;*/
-
 }
 
 .logo img {
 	display: inline-block;
 	height: 25px;
-	margin: 0;
-	padding: 0px;
-}
+	margin-top: 15px;
 
+}
 
 	/*Navigation CSS*/
 	nav li {
@@ -112,16 +105,6 @@ ul {
 	}	
 
 .navbar-toggle {
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin-top: 8px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
   border-color: #ddd;
 }
 
@@ -168,6 +151,7 @@ nav#nav1wrap {
     background-color: #2d2e27;
     text-align: center;
     z-index: 20;
+    opacity: 0.8;
 }
 
 
@@ -193,7 +177,7 @@ nav#nav1wrap {
 
 
 
-@media only all and (max-width: 640px) {
+@media only all and (max-width: 780px) {
 	#nav-trigger {
 		display: block;
 	}
@@ -210,13 +194,32 @@ nav#nav1wrap {
 		display: block;
 	}
 
+	#myCarousel {
+		padding-top: 50px;
+	}
+
+	div#arrow1 img {
+        top: 26%;
+        left: 30px;
+        width: 30px;
+        height: auto
+    }
+
+    div#arrow2 img {
+        top: 26%;
+        right: 30px;
+        width: 30px;
+        height: auto
+    }
+
 }
 
 /*END SHOPE*/
 
 
-.img-main img{
-/*	width: 100%; */
+#img-main img{
+	width: 100%;
+	height: auto;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -224,21 +227,34 @@ nav#nav1wrap {
     bottom: 0;
     left: 0;
     right: 0;
-    max-width: 100%;
-    max-height: 100%;
-    /*margin: auto;*/
+    margin: auto;
     overflow: auto;
 }
 
+@media only all and (max-width: 780px) {
+	.img-main-portrait {
 
-.img-full{
+		    height: 100%;
+
+	}
+
+
+}
+
+.img-full {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
 }
 
+.img-work{
+	width: 100%;
+	padding: 5px;
+	margin: 0px;	
+}
+
 	/*sets the max width of the container of img-work */
-	.col-4 .img-work{
+/*	.col-4 .img-work{
 		max-width: 300px;
 		padding: 10px;
 	}
@@ -249,7 +265,7 @@ nav#nav1wrap {
 		width: 100%;
 		padding: 10px;
 	}
-
+*/
 /*scales all images to be same size
 .img-scale { 
 	width: 100%;
@@ -312,8 +328,8 @@ nav#nav1wrap {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;*/
+  /*height: auto;*/
 }
 .carousel {
   position: relative;
@@ -375,36 +391,36 @@ nav#nav1wrap {
   font-size: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, .6);*/
   background-color: rgba(0, 0, 0, 0);
-  filter: alpha(opacity=50);
-  opacity: .5;
+  /*filter: alpha(opacity=50);*/
+  /*opacity: .5;*/
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
+  /*background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
+  /*background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));*/
+  /*background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
   background-repeat: repeat-x;
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+  /*background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+  /*background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));*/
+  /*background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);*/
   background-repeat: repeat-x;
 }
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
   text-decoration: none;
-  filter: alpha(opacity=90);
+  /*filter: alpha(opacity=90);*/
   outline: 0;
-  opacity: .9;
+  /*opacity: city: .9;*/
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
@@ -483,17 +499,67 @@ nav#nav1wrap {
 .carousel-caption .btn {
   text-shadow: none;
 }
+
+/*END OF BOOTSTRAP*/
+
+div#arrow1 {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer
+}
+
+div#arrow1 img {
+    position: absolute;
+    top: 33%;
+    left: 30px
+}
+
+/*div#arrow1 img:last-child {
+    display: none
+}*/
+
+div#arrow2 {
+    position: absolute;
+    top: 96px;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer
+}
+
+div#arrow2 img {
+    position: absolute;
+    top: 33%;
+    right: 30px
+}
+
+#arrow2 {
+    position: fixed;
+    top: 96px;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 10;
+    cursor: pointer;
+}
 /*test
 
 div {
-	border: 5px solid green;
+	border: 1px solid green;
 }
 
 .row {
-	border: 1px solid purple;
+	border: 1px solid red;
 }
 
-main {
-	background-color: yellow;
-	display: block;
+.container {
+	border: 1px solid orange;	
 }
