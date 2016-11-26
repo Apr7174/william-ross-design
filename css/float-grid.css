@@ -16,19 +16,21 @@
 	margin: 0 auto;
 }
 
-.row::after, .row::before {
+.row::after, .row::before, .clearfix::before, .clearfix::after {
 	display: table;
 	content: '';
 }
 
 /* Clearfix */
 .row::before,
-.row::after {
+.row::after,
+.clearfix::before,
+.clearfix::after {
   display: table;
   content: '';
 }
 
-.row::after {
+.row::after, .clearfix::after, {
 	clear: both;
 } 
 
