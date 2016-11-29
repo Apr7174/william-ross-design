@@ -42,6 +42,8 @@ var setImgDims = function(){
     $('.img-full-screen').css("height", windowHeight);  
   } else {
     $('.img-full-screen').css("width", windowWidth);
+    // $('.img-full-screen').css("height", windowHeight);
+
   }
 }
 
@@ -53,10 +55,10 @@ var printDims = function() {
 
 var pageScroll = function() {
     // page scroll 
-    $('a.page-scroll').bind('click', function(event) {
+    $('a.page-scroll').click(function(event) {
       var $anchor = $(this);
       $('html, body').animate({
-          scrollTop: ($($anchor.attr('href')).offset().top - 50)
+          scrollTop: ($($anchor.attr('href')).offset().top)
         }, "slow");
         event.preventDefault();
     });
@@ -65,7 +67,7 @@ var pageScroll = function() {
 var toggleNav = function() {
   //gets the html from nav-main into nav-mobile using .html() function from jQuery
   $("#nav-mobile").html($('#nav-main').html());
-  $('#nav-trigger span').click(function(){
+  $('#nav-trigger').click(function(){
     if ($('nav#nav-mobile ul').hasClass("expanded")) {
         $('nav#nav-mobile ul.expanded').removeClass('expanded').slideUp(250);
         $(this).removeClass('open');
@@ -95,7 +97,7 @@ var renderHouseLinks = function() {
 //center the image vertically and horizontally
 // imgDims.css({
 //     margin: 'auto',
-//     position: 'absolute',
+//     // position: 'absolute',
 //     top: 0,
 //     bottom: 0,
 //     left: 0,
@@ -108,7 +110,7 @@ $(document).ready(function() {
   renderHouseLinks();
   toggleNav();
   closeDropdown();
-  pageScroll();
+  // pageScroll();
 
 });    
 

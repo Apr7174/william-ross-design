@@ -8,38 +8,270 @@ body {
     padding: 0;
 }
 
-.item {
-    border: 10px solid green;
+a {
+    text-decoration: none; /*removes underline from links*/
+    text-align: center;
+    color: white;
 }
 
-#img-main{
-    background: red;
-    margin: 0;
+ul {
+    display: inline-block;
+    list-style: none; /*removes bullets*/
 }
 
-.img-main-screen{
-    /*width: 100%;*/
-    height: 100%;
-    /*left: 322px;*/
+#top-nav {
+    position: fixed; /*fixes nav on top of screen */
+    top: 0px;
+    background-color: #2d2e27;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 10; 
+}
+
+.logo img {
+    display: inline-block; /*puts links next to brand*/
+    float: left;
+    height: 25px;
+    margin-top: 15px;
+}
+
+/*Navigation CSS*/
+nav li {
+    display: inline; /*puts links next to each other*/
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*centers links on nav */
+#nav-main {
+    text-align: center;
+    background:#2d2e27;
+    float: right;
+}
+
+/*spaces links on nav*/
+#nav-main li {
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+/*hides toggle normally*/
+#nav-trigger {
+    display: none;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+#nav-mobile ul {
+    display: none;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgba(114, 140, 140, 0.5);
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 10px;
+}
+
+#nav-mobile li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+#nav-mobile li a:hover{
+    background-color: rgba(114, 140, 140, 0.3);
+}
+
+#nav-mobile a {
+    display: block;
+    color: white;
+    padding: 10px;
+}   
+
+.navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-toggle:hover,   
+.navbar-toggle:focus {
+    background-color: #ddd;
 
 }
-/*#img-main img {
-    border: 1px solid red;
-    /*height: 100%*/
-    /*width: 100%;*/
-    /*display: inline-block ;*/
-    /*position: relative;*/
-/*    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+
+.navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+/*lines in toggle bar*/
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/*lines in toggle bar*/
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+@media only all and (max-width: 780px) {
+    #nav-trigger {
+        display: inline-block;
+        float: right;
+    }
+
+    div#nav-main {
+        display: none;
+    }
+
+    nav#nav-mobile {
+        display: block;
+    }
+
+    nav#nav-mobile li {
+        display: block;
+    }
+}
+#main-screen {
     overflow: hidden;
+    color: yellow;
+    position: relative;
+    left:0;
+    right: 0;
+    text-align: center;
+}
+
+
+.item{
+    overflow: hidden;
+}
+
+.img-full-screen{
+    /*width: 90%;*/
+    /*height: 100%;*/
+    /*left: 322px;*/
+    overflow: hidden;
+    position: absolute; /*positioned relative to first positioned ancestor*/
+    right: 0; /*puts in right corner to prevent scrolling wider than page */
+    left: 0;
+}
+
+
+#bottom-nav {
+    background-color: orange;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 10;
+    position: absolute; /*positioned relative to ??*/
+    bottom: 0px;
+    padding: 10px;
+}
+
+div#arrow1 {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer
+}
+
+div#arrow1 img {
+    position: absolute;
+    top: 33%;
+    left: 30px
+}
+
+/*div#arrow1 img:last-child {
+    display: none
 }*/
 
-.bar{
-    background-color: blue;
+div#arrow2 {
+    position: absolute;
+    top: 96px;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer
 }
+
+div#arrow2 img {
+    position: absolute;
+    top: 33%;
+    right: 30px
+}
+
+#arrow2 {
+    position: fixed;
+    top: 96px;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 10;
+    cursor: pointer;
+}   
+#our-work{
+    height: 1000px;
+    background-color: blue;
+    padding-top: 30px;
+}
+
+#our-company{
+    height: 1000px;
+    background-color: yellow;
+    padding-top: 30px;
+}
+
+#contact-us{
+    height: 1000px;
+    background-color: red;
+    padding-top: 30px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*.row {
+    max-width: 1000px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}*/
 
 .row::after, 
 .row::before, 
@@ -61,4 +293,189 @@ body {
 .row::after, .clearfix::after, {
     clear: both;
 } 
+
+
+
+/*carousel*/
+/*bootstrap*/
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  /*max-width: 100%;*/
+  /*height: auto;*/
+}
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: z; /*changed from absolute to fixed*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, .6);*/
+  background-color: rgba(0, 0, 0, 0);
+  /*filter: alpha(opacity=50);*/
+  /*opacity: .5;*/
+}
+.carousel-control.left {
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
+  /*background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
+  /*background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));*/
+  /*background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+  /*background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+  /*background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));*/
+  /*background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);*/
+  background-repeat: repeat-x;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  /*filter: alpha(opacity=90);*/
+  outline: 0;
+  /*opacity: city: .9;*/
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: fixed; /*changed to fixed from absolute*/
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: serif;
+  line-height: 1;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  position: absolute; /*fixes position of slide indicators*/
+  bottom: 25px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+
+/*END OF BOOTSTRAP*/
+
 

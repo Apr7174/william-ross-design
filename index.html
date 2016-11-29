@@ -1,277 +1,210 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<title>William Ross Design</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
     <meta name="description" content="">
-    <meta name="author" content="">
-	<title>William Ross Design</title>
 
-	<!-- Boot Copy CSS -->
-	<link rel="stylesheet" type="text/css" href="css/boot-cpy.css">
-
-	<!-- Grid CSS -->
-	<link rel="stylesheet" type="text/css" href="css/float-grid.css">
+    <!-- Grid CSS -->
+    <link rel="stylesheet" type="text/css" href="css/float-grid.css">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/wrd.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<!-- Fonts -->
-	<link href="http://allfont.net/allfont.css?fonts=americana-bt-roman" rel="stylesheet" type="text/css" />
-
-
+	<!--Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Marcellus|Quattrocento" rel="stylesheet">
 </head>
 <body>
+<header>
+</header>
 
-	<!-- Navigation -->
-	<header>
-		<nav id="nav1wrap">
-			<div class="container">
-		        <div class="brand">                    
-		            <a class="logo" href="index.html"><img  src="img/WRD_logo_name-short.jpg"/></a>
-		        </div> 
-				<div id="nav-main">
-		            <ul>
-		                <li>
-		                    <a class="page-scroll" href="#our-work">Our Work</a>
-		                </li>
-		                <li>
-		                    <a class="page-scroll" href="#our-company">Our Company</a>
-		                </li>
-		                <li>
-		                    <a href="contact.html">Contact Us</a>
-		                </li>
-		            </ul>
-				</div>
-		        <!-- toggle button -->
-		        <div id ="nav-trigger">
-		            <button type="button" class="navbar-toggle">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
-		        </div>
-		    	<nav id="nav-mobile"></nav>
-			</div> 
-		</nav>
-	</header>
-
-
-
-
-	<!-- Background Main Image -->
-	<main>
-		<!-- <img class="img-main" src="img/12.jpg"> -->
-
-		<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-			<!-- Indicators -->
-			<ol class="carousel-indicators hidden-xs">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-			
-			<!-- Wrapper for slides -->				
-				<div class="carousel-inner" id="img-main">
-					<div class="item active">
-						<img class="img-full-screen" src="img/1.jpg" alt="">
-					</div>
-					<div class="item">
-						<img class="img-full-screen" src="img/2.jpg" alt="">
-					</div>
-					<div class="item">
-						<img class="img-full-screen" src="img/3.jpg" alt="">
-					</div>
-						<div class="item">
-						<img class="img-full-screen" src="img/4.jpg" alt="">
-					</div>
-				</div>
-			
-			<!-- Controls -->			
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<div id="arrow1" class="arrow"><img src="img/gr_arrow1.png" /></div>
-					<!-- <span class="icon-prev"></span> -->
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<div id="arrow2" class="arrow"><img src="img/gr_arrow2.png" /></div>
-				<!-- <span class="icon-next"></span> -->
-			</a>
-			</div>
+<!-- Top Navigation Bar -->
+<nav id="top-nav"><!-- #top-nav postion=fixed zindex=10 to put infront of main -->
+	<div class="container">
+        <div> <!-- Brand Logo-->                   
+            <a class="logo" href="index.html"><img  src="img/WRD_logo_name-short.jpg"/></a>
+        </div> 
+		<div id="nav-main"> <!--spacing and formatting for links -->
+            <ul>	
+                <li><a class="page-scroll" href="#our-work">Our Work</a></li>
+                <li><a class="page-scroll" href="#our-company">Our Company</a></li>
+                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
+            </ul>
 		</div>
-	</main>
-
-<!-- <div id="home" class="clearfix"> Row
-    <div id="arrow1" class="arrow"><img src="img/gr_arrow1.png" /><img src="img/gr_arrow1b.png" /></div>
-    <div id="arrow2" class="arrow"><img src="img/gr_arrow2.png" /><img src="img/gr_arrow2b.png" /></div>
-    <div id="nav2wrap">
-        <div id="nav2a"><span>&#xf107;</span></div>
-        <div id="nav2b">PROJECT DETAILS</div>
-    </div>
-</div>	 -->	
-	</div>
-	<!-- Our Work -->
-	<section>
-        <div class="row" id="our-work">
-        <hr><h2 class="text-center">Our Work</h2><hr>
-            <div class="col-4">
-                <a href="house-template.html" class="portfolio-box"> 
-                <img class="img-work" src="img/complete/1_Arts-Crafts_Thumbnail.jpg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                        Arts and Crafts Cottage
-                    </div>
-                </div>
-                </a>
-            </div>
-             <div class="col-4">
-                <a href="house-template.html" class="portfolio-box"> 
-                <img class="img-work" src="img/complete/2_Kennebunk-Beach-House_Thumbnail.jpg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                        Kennebunk Beach House
-                    </div>
-                </div>
-                </a>
-            </div>
-             <div class="col-4">
-                <a href="house-template.html" class="portfolio-box"> 
-                <img class="img-work" src="img/complete/3_Kennebunk-Cabana_Thumbnail.jpg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                        Kennebunk Beach Cabana
-                    </div>
-                </div>
-                </a>
-            </div>
-             <div class="col-4">
-                <a href="house-template.html" class="portfolio-box"> 
-                <img class="img-work" src="img/complete/4_Maine-Craftsman-Style_Thumbnail.jpg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                        Maine Craftsman Style
-                    </div>
-                </div>
-                </a>
-            </div> 
-            <div class="col-4">
-                <a href="house-template.html" class="portfolio-box"> 
-                <img class="img-work" src="img/complete/5_Ogunquit-Oceanfront_Thumbnail.jpg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                        Ogunquit Oceanfront
-                    </div>
-                </div>
-                </a>
-            </div> 
-            <div class="col-4">
-                <a href="house-template.html" class="portfolio-box"> 
-                <img class="img-work" src="img/complete/6_Ogunquit-Ocean-View_Thumbnail.jpg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                        Ogunquit Oceanview
-                    </div>
-                </div>
-                </a>
-            </div>                        
-            <div class="col-4">
-                <img class="img-work" src="img/complete/2_Kennebunk-Beach-House_Thumbnail.jpg">
-            </div>
-            <div class="col-4">
-                <img class="img-work" src="img/complete/2_Kennebunk-Beach-House_Thumbnail.jpg">
-            </div>
-            <div class="col-4">
-                <img class="img-work" src="img/complete/3_Kennebunk-Cabana_Thumbnail.jpg">
-            </div>
-            <div class="col-4">
-                <img class="img-work" src="img/complete/4_Maine-Craftsman-Style_Thumbnail.jpg">
-            </div>
-            <div class="col-4">
-                <img class="img-work" src="img/complete/5_Ogunquit-Oceanfront_Thumbnail.jpg">
-            </div>
-            <div class="col-4">
-                <img class="img-work" src="img/complete/6_Ogunquit-Ocean-View_Thumbnail.jpg">
-            </div>
+        <div id ="nav-trigger"> <!-- toggle button -->
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-    </section>
+    	<nav id="nav-mobile"></nav>
+	</div> 
+</nav>
 
-	<!-- Our Company -->
-	<div class="container" id="our-company">
-        <div class="row">
-            <div class="col-12">
-                <hr>
-                <h2 class="text-center">
-                    Our Approach
-                </h2>
-                <hr>
+<!-- Main Screen to hold background images, same as homebg -->
+	<!-- Slideshow -->
+	<div id="slideshow" class="full-screen-div">
+	    <img src="img/intro/1.jpg" alt="house1" class="img-full-screen active" />
+	    <img src="img/intro/2.jpg" alt="house2" class="img-full-screen"/>
+	    <img src="img/intro/3.jpg" alt="house3" class="img-full-screen"/>
+	    <img src="img/intro/4.jpg" alt="4" class="img-full-screen"/>
+	    <img src="img/intro/5.jpg" alt="5" class="img-full-screen"/>
+	    <img src="img/intro/6.jpg" alt="6" class="img-full-screen"/>
+	</div>
+
+	<div>
+		<!-- Controls -->
+		<div id="arrow1"><img src="img/gr_arrow1.png"></div>
+		<div id="arrow2"><img src="img/gr_arrow2.png"></div>
+		
+		<!-- Bottom Navigation Bar -->
+		<div id="bottom-nav">Project Details</div>	
+	</div>
+	
+
+
+<div class="clearfix" id="our-work">
+	<div class="container">	
+			<br><br><br>
+            <hr><h2 class="text-center">Our Work</h2><hr>
+            <!-- Example Project -->
+            <div class="col-4">
+            	<div class="portfolio-box">            		
+                	<a href="house-template.html"> 
+                	<img class="img-full" src="img/complete/1_Arts-Crafts_Thumbnail.jpg"/>
+                    Arts and Crafts Cottage
+                	</a>
+            	</div>
             </div>
+            <!-- Example Project -->
+            <div class="col-4">
+            	<div class="portfolio-box">            		
+                	<a href="house-template.html"> 
+                	<img class="img-full" src="img/complete/1_Arts-Crafts_Thumbnail.jpg"/>
+                    Arts and Crafts Cottage
+                	</a>
+            	</div>
+            </div>
+            <!-- Example Project -->
+            <div class="col-4">
+            	<div class="portfolio-box">            		
+                	<a href="house-template.html"> 
+                	<img class="img-full" src="img/complete/1_Arts-Crafts_Thumbnail.jpg"/>
+                    Arts and Crafts Cottage
+                	</a>
+            	</div>
+            </div>            
+            <!-- Example Project -->
+            <div class="col-4">
+            	<div class="portfolio-box">            		
+                	<a href="house-template.html"> 
+                	<img class="img-full" src="img/complete/1_Arts-Crafts_Thumbnail.jpg"/>
+                    Arts and Crafts Cottage
+                	</a>
+            	</div>
+            </div>
+            <!-- Example Project -->
+            <div class="col-4">
+            	<div class="portfolio-box">            		
+                	<a href="house-template.html"> 
+                	<img class="img-full" src="img/complete/1_Arts-Crafts_Thumbnail.jpg"/>
+                    Arts and Crafts Cottage
+                	</a>
+            	</div>
+            </div>
+            <!-- Example Project -->
+            <div class="col-4">
+            	<div class="portfolio-box">            		
+                	<a href="house-template.html"> 
+                	<img class="img-full" src="img/complete/1_Arts-Crafts_Thumbnail.jpg"/>
+                    Arts and Crafts Cottage
+                	</a>
+            	</div>
+            </div>   
+    </div>
+</div>	
+
+<div id="our-company" class="clearfix">
+	<div class="container">
+	<br><br><br>
                 <div class="col-6">
                     <img class="img-full" src="img/4.jpg" alt="">
                 </div>
                 <div class="col-6">
+        			<hr><h2 class="text-center">Our Approach</h2><hr>
                     <p>At the turn of the century, the 'Shingle Style' architecture of coastal New England, exhibited a rich tradition of syle and design. Those surviving seaside homes and buildings are admired today for their enduring qualities of proportion, and architectural detail. In our pursuit of creating fine home, these traditional design elements, and materials of the past, are what we value today.   </p>
+                    <p>William Ross Design is a small architectural design firm that has been established on the Seacost since 1991. We specialize in creating elegant custom homes that are historically inspired, yet accomodate the needs of today's family and modern lifestyles. Attentive to the client's personal input, we listen carefully, to create beautiful buildings that are unique yet modern and appropriate in the New England landscape.</p>
+                    <p>Our passion for this architecture, our attention to design and construction details, combined with 15 years experience working as a general contractor, building custom homes, is what sets us apart.	 </p>
                 </div>
 
-				<div class="col-12">
-                    <hr>
-                    <h2 class="text-center">
-                        Our Services
-                    </h2>
-                    <hr>
-                </div>
-				<div class="col-6">
+                <hr><h2 class="text-center">Our Services</h2><hr>
+    			<div class="col-6">
                     <img  class="img-full" src="img/Wing_Model.jpg" alt="">
-					<h4 class="text-center"> - Computer Generated Image - </h4>
+    				<h4 class="text-center"> - Computer Generated Image - </h4>
                 </div>
                 <div class="col-6">
-				    <img class="img-full" src="img/Wing_Complete.jpg" alt="">
-					<h4 class="text-center"> - Completed Project - </h4>
+    			    <img class="img-full" src="img/Wing_Complete.jpg" alt="">
+    				<h4 class="text-center"> - Completed Project - </h4>
                 </div>
-                <div class="clearfix"></div>
-				<div class="col-12">
-					<h3>Design Development</h3>
-					<p>During this stage, an emphasis is placed on conveying the architectural image so that the client can visually experience the design process. This is initiated with hand drawn and colored, architectural renderings, a time honored and proven technique, utilized by architects of the past. These graphic images are then transformed into a modern computer generated format where they are made into a three dimensional model. The client can not only see the image of his project, but is allowed to walk around the exterior and interior of the home to experience the design effect.</p>
-				</div>
-				<div class="col-12">
+    			<div class="col-12">
+    				<h3>Design Development</h3>
+    				<p>During this stage, an emphasis is placed on conveying the architectural image so that the client can visually experience the design process. This is initiated with hand drawn and colored, architectural renderings, a time honored and proven technique, utilized by architects of the past. These graphic images are then transformed into a modern computer generated format where they are made into a three dimensional model. The client can not only see the image of his project, but is allowed to walk around the exterior and interior of the home to experience the design effect.</p>
+    			</div>
+    			<div class="col-12">
                     <hr>
                     <h2 class="intro-text text-center">
                         Press
                     </h2>
                     <hr>
                 </div>
-				<div class="col-6">
-					<a href="http://coastalhg.com/Featured-Homes/soho-by-the-sea.html">
+    			<div class="col-6">
+    				<a href="http://coastalhg.com/Featured-Homes/soho-by-the-sea.html">
                     <img class="img-responsive center-block img-press" src="img/logo.gif" alt="">
-					</a>
+    				</a>
                 </div>
-				<div class="col-6">
-					<a href="http://mainehomedesign.com/features/2420-peace-like-a-river/">
+    			<div class="col-6">
+    				<a href="http://mainehomedesign.com/features/2420-peace-like-a-river/">
                     <img class="img-responsive center-block img-press" src="img/maine.png" alt="">
-					</a>
+    				</a>
                 </div>
-        </div>
-	</div>
+    </div>
+</div>    
+                </div>
+                <div class="clearfix"></div>
+            </div>
+</div>
 
+<div id="contact-us" class="clearfix">
+	<hr><h2 class="text-center">Contact Us</h2><hr>
+	<br><br><br>
+<!-- 	<hr>	
+	<img class="img-center" src="img/William-Ross-Design_Address-Phone.jpg"><hr>
+	<h3 class="text-center">Email</h3>
+	<div class="text-center">		
+		William Ross<a href="mailto:wross@"> - @wross.com</a>
+		<br><br>
+		William Ross<a href="mailto:wross@"> - @wross.com</a>
+		<br><br>
+	</div>
+	<hr> -->
+
+
+	<footer class="container">
+			<a href="index.html"><img id ="footer-logo" class="img-center" src="img/WRD_logo.jpg"></a>
+	</footer>
+</div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom JavaScript -->
-    <script type="text/javascript" src="js/design.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script> 
-
-
+    <!-- Custom JS  -->
+    <script type="text/javascript" src="js/wrd.js"></script>
 
 </body>
-</html>
+
+
+</html>	

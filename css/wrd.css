@@ -85,7 +85,6 @@ ul {
 		-webkit-margin-after: 10px;
 	}
 
-
 	#nav-mobile li {
 		display: block;
 		text-align: center;
@@ -271,26 +270,23 @@ nav#nav1wrap {
 /*END SHOPE*/
 
 
-/*#img-main img{
-	width: 100%;
-	height: auto;
-	padding: 0;
-	margin: 0;
+.img-full-screen{
+  /*height: 100%;*/
 	position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    overflow: auto;
-}*/
+    /*margin: auto;*/
+    overflow: hidden;
+}
 
 @media only all and (max-width: 780px) {
-	.img-main-portrait {
+/*	.img-main-portrait {
 
 		    height: 100%;
 
-	}
+	}*/
 
 
 }
@@ -437,7 +433,7 @@ nav#nav1wrap {
   left: 100%;
 }
 .carousel-control {
-  position: absolute;
+  position: fixed; /*changed from absolute to fixed*/
   top: 0;
   bottom: 0;
   left: 0;
@@ -480,7 +476,7 @@ nav#nav1wrap {
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right {
-  position: absolute;
+  position: fixed; /*changed to fixed from absolute*/
   top: 50%;
   z-index: 5;
   display: inline-block;
@@ -510,7 +506,7 @@ nav#nav1wrap {
   content: '\203a';
 }
 .carousel-indicators {
-  position: absolute;
+  position: fixed; /*fixes position of slide indicators*/
   bottom: 10px;
   left: 50%;
   z-index: 15;
@@ -616,4 +612,21 @@ div {
 
 .container {
 	border: 1px solid orange;	
+}
+
+*/
+
+#our-company {
+  background-color: red;
+  border: 10px solid red;
+  height: 100%;
+}
+
+#our-work {
+  background-color: green;
+  border: 1px solid green;
+}
+
+#contact-us {
+  background-color: purple;
 }

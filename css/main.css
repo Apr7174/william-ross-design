@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+}
+
+.col-4 {
+    /*border: 1px solid yellow;*/
+    /*background: white;*/
+}
+body {
+    background-color: #2d2e27;
+    color: #D3D3D3;
+    margin:0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Marcellus', serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    font-family: 'Quattrocento', serif;
+    color: #D3D3D3;
+}
+a {
+    text-decoration: none; /*removes underline from links*/
+    text-align: center;
+    color: white;
+}
+
+ul {
+    display: inline-block;
+    list-style: none; /*removes bullets*/
+}
+
+hr {
+    margin-top: 0;
+    border-color: gray;
+}
+
+#slideshow {
+    position:relative;
+    height: 350px;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+}
+
+#slideshow img {
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    z-index:8;
+    opacity: 0.0;
+}
+
+#slideshow img.active {
+    z-index:10;
+    opacity: 1.0;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+.logo img {
+    display: inline-block; /*puts links next to brand*/
+    float: left;
+    height: 25px;
+    margin-top: 15px;
+}
+
+/*Navigation CSS*/
+#top-nav {
+    position: fixed; /*fixes nav on top of screen */
+    top: 0px;
+    background-color: #2d2e27;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 11; 
+}
+
+nav li {
+    display: inline; /*puts links next to each other*/
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*centers links on nav and pushes to right */
+#nav-main {
+    text-align: center;
+    background:#2d2e27;
+    float: right;
+    font-family: "Quattrocento", serif;
+}
+
+/*spaces links on nav*/
+#nav-main li {
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+/*hides toggle normally*/
+#nav-trigger {
+    display: none;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+#nav-mobile ul {
+    display: none;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgba(114, 140, 140, 0.5);
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 10px;
+}
+
+#nav-mobile li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+#nav-mobile li a:hover{
+    background-color: rgba(114, 140, 140, 0.3);
+}
+
+#nav-mobile a {
+    display: block;
+    color: white;
+    padding: 10px;
+}   
+
+.navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-toggle:hover,   
+.navbar-toggle:focus {
+    background-color: #ddd;
+
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+/*lines in toggle bar*/
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/*lines in toggle bar*/
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+@media only all and (max-width: 780px) {
+    #nav-trigger {
+        display: inline-block;
+        float: right;
+    }
+
+    div#nav-main {
+        display: none;
+    }
+
+    nav#nav-mobile {
+        display: block;
+    }
+
+    nav#nav-mobile li {
+        display: block;
+    }
+
+}
+
+.img-full-screen{
+    overflow: hidden;
+    position: absolute; /*positioned relative to first positioned ancestor*/
+    right: 0; /*puts in right corner to prevent scrolling wider than page */
+    left: 0;
+}
+
+
+#bottom-nav {
+    background-color: #2d2e27;
+    color: white;
+    width: 100%;
+    opacity: 0.95;
+    z-index: 10;
+    position: absolute; /*positioned relative to #slideshow*/
+    bottom: 0px;
+    padding: 10px;
+}
+
+#arrow1 {
+    /*background-color: green;*/
+    width: 25%;
+    height: 100%;
+    z-index: 10;
+    position: absolute; /*positioned relative to #slideshow*/
+    bottom: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+div#arrow1 img {
+    position: absolute;
+    top: 33%;
+    left: 30px
+    z-index: 50;
+}
+
+#arrow2 {
+    /*background-color: green;*/
+    width: 25%;
+    height: 100%;
+    z-index: 10;
+    position: absolute; /*positioned relative to ??*/
+    bottom: 0px;
+    right: 0; /*puts div for arrows on side*/
+    padding: 10px;
+    cursor: pointer;
+}
+
+div#arrow2 img {
+    position: absolute;
+    top: 33%;
+    right: 30px;
+    z-index: 50;
+}
+
+#our-work{
+    /*background-color: blue;*/
+    padding-top: 30px;
+}
+
+#our-company{
+    height: 100%;
+    /*background-color: yellow;*/
+    padding-top: 30px;
+}
+
+#contact-us{
+    height: 500px;
+    /*background-color: red;*/
+    padding-top: 50px;
+}
+
+.img-full {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;}
+
+ .text-center {
+    text-align: center;
+ }   
+
+.img-center {
+    margin: auto;
+    display: block;
+}
+ .thumbnails img {
+    /*border: 1px solid darkgray;*/
+    padding: 2px;
+ }
+
+ .portfolio-box{
+    background: white;
+    border: 2px solid gray;
+    padding: 0;
+    margin: 10px 5px;
+    text-align: center;
+ }
+
+ .portfolio-box:hover{
+    opacity: 0.5;
+ }
+
+ .portfolio-box a{
+    color: black;
+
+ }
+
+ footer{
+    position: relative;
+    bottom: -120px;
+    /*margin: auto;*/
+    /*border: 1px solid red;*/
+ }
+
+ #footer-logo {
+    padding-right: 0;
+    width: 300px;
+ }

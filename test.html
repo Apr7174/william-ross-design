@@ -2,26 +2,127 @@
 <html>
 <head>
 	<title>Test</title>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta name="description" content="">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/test.css">
 
 </head>
 <body>
-<!-- <div class="bar"> -->
-	<div id="img-main">
-		<div class="item active">
-			<img class="img-full-screen" src="img/2.jpg" alt="">
-		</div>
-	</div>
-<!-- </div> -->
+<header>
+</header>
 
-</body>
+<!-- Top Navigation Bar -->
+<!-- #top-nav postion=fixed zindex=10 to put infront of main -->
+<nav id="top-nav">
+    			<div class="container">
+    		        <div class="brand">                    
+    		            <a class="logo" href="test.html"><img  src="img/WRD_logo_name-short.jpg"/></a>
+    		        </div> 
+    				<div id="nav-main">
+    		            <ul>	
+    		                <li><a class="page-scroll" href="#our-work">Our Work</a></li>
+    		                <li><a class="page-scroll" href="#our-company">Our Company</a></li>
+    		                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
+    		            </ul>
+    				</div>
+    		        <!-- toggle button -->
+    		        <div id ="nav-trigger">
+    		            <button type="button" class="navbar-toggle">
+    		                <span class="sr-only">Toggle navigation</span>
+    		                <span class="icon-bar"></span>
+    		                <span class="icon-bar"></span>
+    		                <span class="icon-bar"></span>
+    		            </button>
+    		        </div>
+    		    		<nav id="nav-mobile"></nav>
+   				</div> 
+</nav>
+
+<!-- Main Screen to hold background images, same as homebg -->
+<div id="main-screen">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+    	<!-- Indicators -->
+    	<ol class="carousel-indicators hidden-xs">
+    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    		<li data-target="#myCarousel" data-slide-to="1"></li>
+    		<li data-target="#myCarousel" data-slide-to="2"></li>
+    		<li data-target="#myCarousel" data-slide-to="3"></li>
+    	</ol>
+        <!-- Wrapper for slides -->				
+    	<div class="carousel-inner" id="div-main">
+			<div class="item active">hi
+				<img class="img-full-screen" src="img/K1.jpg" alt="hello"/>
+			</div>
+
+    		<div class="item">
+    			<img class="img-full-screen" src="img/K1.jpg" alt="k1">
+    		</div>
+    		<div class="item">
+    			<img class="img-full-screen" src="img/2.jpg" alt="bb">
+    		</div>
+    		<div class="item">
+    			<img class="img-full-screen" src="img/3.jpg" alt="qq">
+    		</div>
+    			<div class="item">
+    			<img class="img-full-screen" src="img/4.jpg" alt="ii">
+    		</div>
+        </div>        	
+    	
+    </div>
+</div>
+
+
+
+<div id="">
+	<!-- Controls -->			
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<div id="arrow1" class="arrow"><img src="img/gr_arrow1.png" /></div>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<div id="arrow2" class="arrow"><img src="img/gr_arrow2.png" /></div>
+	</a>
+	<!-- Bottom Navigation Bar -->
+	<div id="bottom-nav">Project Details</div>
+	<div class="slider_option">
+  		<input type="checkbox" id="checkbox">
+  		<label for="checkbox">Autoplay Slider</label>
+	</div> 
+</div>
+	
+
+
+<div class="row" id="our-work">
+	<h1>Our Work</h1>
+</div>
+
+<div id="our-company">
+	<h1>Our Company</h1>
+</div>
+
+<div id="contact-us">
+	<h1>Contact Us</h1>
+</div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
     <!-- Custom JS  -->
     <script type="text/javascript" src="js/test.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+        <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script> 
+</body>
 
 
 </html>	
